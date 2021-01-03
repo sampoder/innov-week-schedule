@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Heading, Flex, Badge, Link, Text } from "@chakra-ui/core";
-import Form from "../components/Form";
 import Twemoji from "react-twemoji";
 import Events from "../config";
 import Head from "../components/meta";
