@@ -4,7 +4,7 @@ export default ({
   name = 'Innovation Week 2021',
   title = 'Schedule',
   description = 'A schedule of events and the fun that\'s coming up',
-  image = 'https://cloud-20fy27a19.vercel.app/0screenshot_2021-01-03_at_3.21.44_pm.png',
+  image = 'https://cloud-cotwl6h2q.vercel.app/0screenshot_2021-01-03_at_3.30.40_pm.png',
   url = 'https://schedule.innovweek.co'
 }) => (
   <Head>
