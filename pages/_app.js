@@ -2,6 +2,7 @@ import React from "react";
 import customTheme from "../styles/customTheme";
 import { ThemeProvider, CSSReset, Box } from "@chakra-ui/core";
 import Header from "next/head";
+import '../styles/styles.css'
 
 function MyApp({ Component, pageProps }) {
   return (

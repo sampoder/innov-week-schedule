@@ -40,8 +40,8 @@ export default function Main() {
             >
               <Flex>
                 <Box width="85%">
-                  <Heading fontSize="16px">{event.name}</Heading>
-                  <Text pt={1} fontSize="12px">
+                  <Heading fontSize="18px">{event.name}</Heading>
+                  <Text pt={1} fontSize="14px">
                     <i>
                       {event.location}, {event.time}
                     </i>
@@ -66,7 +66,7 @@ export default function Main() {
             <Text
               p={["4vw", "2.5vw", "1.5vw"]}
               pt="0vw"
-              fontSize="12px"
+              fontSize="14px"
               borderRadius="4px"
               borderTopLeftRadius="0px"
               borderTopRightRadius="0px"

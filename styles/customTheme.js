@@ -2,6 +2,11 @@ import {theme} from "@chakra-ui/core";
 
 const customTheme = {
     ...theme,
+    fonts: {
+        body: "'SFRounded', system-ui, sans-serif",
+        heading: "'SFRounded', sans-serif",
+        mono: "monospace",
+      },
     colors: {
         ...theme.colors,
         brand: {
