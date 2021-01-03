@@ -3,10 +3,12 @@ import { Box, Grid, Heading, Flex, Badge, Link, Text } from "@chakra-ui/core";
 import Form from "../components/Form";
 import Twemoji from "react-twemoji";
 import Events from "../config";
+import Head from "../components/meta";
 
 export default function Main() {
   return (
     <>
+      <Head />
       <Box
         p={["8vw", "5vw", "3vw"]}
         color="white"
