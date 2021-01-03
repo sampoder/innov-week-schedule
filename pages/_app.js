@@ -1,0 +1,17 @@
+import React from "react";
+import customTheme from "../styles/customTheme";
+import { ThemeProvider, CSSReset, Box } from "@chakra-ui/core";
+import Header from "next/head";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <ThemeProvider theme={customTheme}>
+        <CSSReset />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
+}
+
+export default MyApp;

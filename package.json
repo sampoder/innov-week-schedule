@@ -1,0 +1,22 @@
+{
+  "name": "chakra-ui-next-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.7.0",
+    "react-twemoji": "^0.3.0"
+  }
+}
