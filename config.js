@@ -56,7 +56,7 @@ export default [
     and you just make something! It could be art, a game, a website, an app, a song, 
     a LEGO statue, a robot... you get the point: anything! There will be a free snack and 
     drink as well!`,
-    emoji: "🤖",
+    emoji: "🌃",
     signup: "https://innovweek.co/night"
   }
 ];

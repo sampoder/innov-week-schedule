@@ -23,17 +23,12 @@ export default function Main() {
       </Box>
       <Grid
         p={["4vw", "2.5vw", "3vw"]}
-        gridTemplateRows="1fr"
+        gridTemplateRows={["0fr", "1fr", "1fr"]}
         templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
         gap={6}
       >
         {Events.map((event) => (
-          <Box
-            w="100%"
-            borderRadius="6px"
-            h="100%"
-            border="0.5px solid #00053E"
-          >
+          <Box w="100%" borderRadius="6px" border="0.5px solid #00053E">
             <Box
               p={["4vw", "2.5vw", "1.5vw"]}
               pb="2vw"
@@ -56,7 +51,7 @@ export default function Main() {
                   width="15%"
                   textAlign="right"
                   h="3"
-                  p={["0", "0", "10px"]}
+                  p={["7px", "0", "10px"]}
                   pt={"0px!important"}
                 >
                   <Twemoji options={{ className: "twemoji" }}>
@@ -76,7 +71,6 @@ export default function Main() {
               borderTopLeftRadius="0px"
               borderTopRightRadius="0px"
               pt={2}
-              pb="100%"
             >
               {event.description}
               {event.signup ? (
