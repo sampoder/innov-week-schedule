@@ -16,7 +16,7 @@ export default [
     time: "Tuesday Lunch",
     description: `Ever wanted to get an edge other your classmates in Kahoot?
      Hacking Kahoot is surprisingly simple and you can learn how to at 
-     lunchtime this Tuesday in the auditorium`,
+     lunchtime this Tuesday in the auditorium.`,
     emoji: "⁉️",
   },
   {
