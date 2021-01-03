@@ -14,7 +14,7 @@ export default function Main() {
         background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
                     url('https://workshops.hackclub.com/api/patterns/sam')`}
       >
-        <Heading as="h3" fontSize={["5vw", "5vw", "2vw"]} color="white">
+        <Heading as="h3" fontSize={["5vw", "3vw", "2vw"]} color="white">
           Innovation Week 2021
         </Heading>
         <Heading as="h1" fontSize={["18vw", "12vw", "7vw"]} color="white">
@@ -23,32 +23,46 @@ export default function Main() {
       </Box>
       <Grid
         p={["4vw", "2.5vw", "3vw"]}
+        gridTemplateRows="1fr"
         templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
         gap={6}
       >
-        {Events.map((country) => (
-          <Box w="100%" borderRadius="4px">
+        {Events.map((event) => (
+          <Box
+            w="100%"
+            borderRadius="6px"
+            h="100%"
+            border="0.5px solid #00053E"
+          >
             <Box
               p={["4vw", "2.5vw", "1.5vw"]}
               pb="2vw"
               borderRadius="4px"
               borderBottomLeftRadius="0px"
               borderBottomRightRadius="0px"
-              background={`linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),
-            url('https://workshops.hackclub.com/api/patterns/kahoot')`}
+              background="#00053E"
               color="white"
             >
               <Flex>
                 <Box width="85%">
-                  <Heading fontSize="16px">Kahoot Hacker Style</Heading>
+                  <Heading fontSize="16px">{event.name}</Heading>
                   <Text pt={1} fontSize="12px">
-                    <i>Auditorium, Monday Lunch</i>
+                    <i>
+                      {event.location}, {event.time}
+                    </i>
                   </Text>
                 </Box>
-                <Box width="15%" textAlign="right" h="3">
+                <Box
+                  width="15%"
+                  textAlign="right"
+                  h="3"
+                  p={["0", "0", "10px"]}
+                  pt={"0px!important"}
+                >
                   <Twemoji options={{ className: "twemoji" }}>
                     <p>
-                      🤖<span></span>
+                      {event.emoji}
+                      <span></span>
                     </p>
                   </Twemoji>
                 </Box>
@@ -57,25 +71,33 @@ export default function Main() {
             <Text
               p={["4vw", "2.5vw", "1.5vw"]}
               pt="0vw"
-              border="1px solid black"
               fontSize="12px"
               borderRadius="4px"
               borderTopLeftRadius="0px"
               borderTopRightRadius="0px"
               pt={2}
+              pb="100%"
             >
-              The Innovation Challenge is your chance to tackle the critical
-              issues that our world faces. In it, you form teams of three to
-              identify an issue, ideate a solution and then pitch your idea. You
-              can learn more about the information session on Monday Lunchtime
-              in the Innovation Suite.
+              {event.description}
+              {event.signup ? (
+                <>
+                  <br />
+                  <br />{" "}
+                  <a style={{ color: "blue" }} href={event.signup}>
+                    {" "}
+                    Sign up in advance to reserve your place!{" "}
+                  </a>
+                </>
+              ) : (
+                ""
+              )}
             </Text>
           </Box>
         ))}
       </Grid>
       <style>
         {`.twemoji{
-              height: 42px;
+              width: 100%;
           }`}
       </style>
     </>
