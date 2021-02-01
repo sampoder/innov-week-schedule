@@ -1,14 +1,12 @@
 export default [
   {
-    name: "Innovation Challenge Info Session",
-    location: "Innovation Suite",
+    name: "Robot Wars",
+    location: "Auditorium",
     time: "Monday Lunch",
-    description: `The Innovation Challenge is your chance to tackle the critical
-    issues that our world faces. In it, you form teams of three to
-    identify an issue, ideate a solution and then pitch your idea. You
-    can learn more about the information session on Monday Lunchtime in
-    the Innovation Suite.`,
-    emoji: "💡",
+    description: `Robots at the ready. Join us in the Auditorium to have 
+    the chance to battle your friend through robots. You need to push your friend’s 
+    robot outside of the circle whilst they try to do the same to your’s.`,
+    emoji: "🤖",
   },
   {
     name: "Kahoot Hacker Style",
@@ -27,7 +25,7 @@ export default [
      between objects, sounds and motions. Using Teachable Machine will learn
       how to create Machine Learning models and compete to make the craziest. Taking
       place in the auditorium this Wednesday lunchtime.`,
-    emoji: "🤖",
+    emoji: "📟",
   },
   {
     name: "Design Center Showcase",
